@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Com es produeix l'electricitat? · Centrals elèctriques</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#f7f8fa;--card:#fff;--tx:#1d2733;--mut:#5b6775;--line:#d9dee5;--ink:#1f3864}
+:root:not([data-theme="light"]){}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14181d;--card:#1d232b;--tx:#e8ecf1;--mut:#9aa6b4;--line:#323b46;--ink:#9db8ec}}
+:root[data-theme="dark"]{--bg:#14181d;--card:#1d232b;--tx:#e8ecf1;--mut:#9aa6b4;--line:#323b46;--ink:#9db8ec}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*:before,*:after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+main{max-width:920px;margin:0 auto;padding:20px 16px 60px}
+h1{font-size:1.7rem;line-height:1.2;margin:.2em 0 .1em;color:var(--ink)}
+h2{font-size:1.25rem;margin:1.6em 0 .5em;color:var(--ink)}
+.sub{color:var(--mut);margin:0 0 1rem}
+nav{display:flex;gap:6px;flex-wrap:wrap;margin:14px 0;position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);padding:8px 0;z-index:2;border-bottom:1px solid var(--line)}
+nav button,.chips button{font:inherit;border:1px solid var(--line);background:var(--card);color:var(--tx);padding:8px 14px;border-radius:8px;cursor:pointer}
+nav button[aria-selected=true]{background:var(--ink);color:var(--bg);border-color:var(--ink);font-weight:600}
+button:focus-visible,textarea:focus-visible{outline:3px solid #2e75b6;outline-offset:2px}
+section[hidden]{display:none}
+.box{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin:10px 0}
+.roles{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px}
+.role{background:var(--card);border:1px solid var(--line);border-top:6px solid var(--c);border-radius:8px;padding:12px 16px}
+.role h3{margin:0;font-size:1.05rem}.role small{color:var(--mut)}
+.role ul,.box ul,.cols ul{margin:.4em 0;padding-left:1.2em}
+.wire{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:10px 0;font-size:.9rem}
+.wire div{padding:12px;border-radius:6px;color:#1d2733}
+.wire .t{grid-column:1/-1;background:var(--ink);color:var(--bg);text-align:center;font-weight:700}
+.wire .i{grid-column:1/-1;background:var(--line);text-align:center;font-style:italic}
+table{border-collapse:collapse;width:100%;background:var(--card)}
+th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+th{background:var(--ink);color:var(--bg)}
+.sc{overflow-x:auto}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.chips button{border-left:6px solid var(--c)}
+.chips button[aria-pressed=true]{background:var(--c);color:#fff;font-weight:600}
+.fh{background:var(--c);color:#fff;border-radius:8px;padding:12px 16px}
+.fh h2{color:#fff;margin:0}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:600px){.cols{grid-template-columns:1fr}.wire{grid-template-columns:1fr}}
+.pro{border-left:6px solid #3d8b37}.con{border-left:6px solid #c0392b}
+.exc{background:#fff2cc;color:#4d3b00;border-radius:6px;padding:8px 12px;font-weight:600}
+.tr{background:var(--card);border:2px solid var(--c);border-radius:8px;padding:8px 12px;margin:10px 0}
+ol{padding-left:1.3em}
+textarea{width:100%;min-width:130px;min-height:90px;font:inherit;color:var(--tx);background:var(--card);border:1px solid var(--line);border-radius:4px;padding:6px;resize:vertical}
+td.n{font-weight:700;min-width:100px}
+.btn{font:inherit;border:1px solid var(--line);background:var(--card);color:var(--tx);padding:8px 14px;border-radius:8px;cursor:pointer;margin-right:6px}
+@media print{nav,.chips,.btn{display:none}section[hidden]{display:block}body{background:#fff;color:#000}}
+</style>
+</head>
+<body>
+<main>
+<h1>Com es produeix l'electricitat?</h1>
+<p class="sub">Treball en grups de 3: una central, una diapositiva, una presentació.</p>
+<nav role="tablist">
+<button role="tab" data-t="guia" aria-selected="true">Guia i rols</button>
+<button role="tab" data-t="fitxes" aria-selected="false">Fitxes de les centrals</button>
+<button role="tab" data-t="graella" aria-selected="false">Graella de deures</button>
+</nav>
+
+<section id="guia">
+<div class="box"><b>La vostra missió.</b> Cada grup té una central. Amb la fitxa heu de preparar <b>una sola diapositiva</b> i explicar-la a la classe en uns 5 minuts. Tots feu la mateixa feina (llegir, triar, redactar amb paraules pròpies i dibuixar), però cadascú és responsable d'un bloc.</div>
+<h2>Els tres rols</h2>
+<div class="roles">
+<div class="role" style="--c:#bf8f00"><h3>Persona 1 · Origen</h3><small>D'on surt l'energia?</small>
+<ul><li>Quina és la font d'energia?</li><li>Primària o secundària? (La font és primària; l'electricitat és secundària.)</li><li>Renovable o no renovable? Per què?</li></ul>
+<p><b>Posa a la diapositiva:</b> la font en una frase, dues etiquetes i una icona.</p>
+<p><i>«La nostra central fa servir…, que és una energia… perquè…»</i></p></div>
+<div class="role" style="--c:#2e75b6"><h3>Persona 2 · Procés</h3><small>Com es converteix en electricitat?</small>
+<ul><li>Els passos en ordre: què mou què.</li><li>Les transformacions d'energia (de… a…).</li><li>Té turbina i alternador? La solar fotovoltaica és l'excepció.</li></ul>
+<p><b>Posa a la diapositiva:</b> un esquema de 3-4 passos amb fletxes i la cadena d'energies.</p>
+<p><i>«Primer…, després…, i finalment es genera electricitat perquè…»</i></p></div>
+<div class="role" style="--c:#548235"><h3>Persona 3 · Impacte</h3><small>Què té de bo i de dolent?</small>
+<ul><li>Dos avantatges.</li><li>Dos inconvenients.</li><li>Una dada curiosa.</li></ul>
+<p><b>Posa a la diapositiva:</b> dos punts verds, dos de vermells, la dada curiosa i una opinió breu del grup.</p>
+<p><i>«Un avantatge és…, però té un inconvenient: …»</i></p></div>
+</div>
+
+<h2>Pla de treball (55 minuts)</h2>
+<div class="sc"><table>
+<tr><th>Temps</th><th>Què fem?</th></tr>
+<tr><td>5 min</td><td>Llegiu la fitxa de la vostra central i repartiu els rols.</td></tr>
+<tr><td>10 min</td><td>Cadascú busca a la fitxa la informació del seu bloc.</td></tr>
+<tr><td>10 min</td><td>Cadascú redacta el seu bloc amb paraules pròpies (no copieu frases).</td></tr>
+<tr><td>10 min</td><td>Cadascú busca o fa la il·lustració del seu bloc (icona, dibuix o esquema).</td></tr>
+<tr><td>15 min</td><td>Munteu la diapositiva entre els tres.</td></tr>
+<tr><td>5 min</td><td>Assajeu: cada persona explica el seu bloc en uns 90 segons.</td></tr>
+</table></div>
+
+<h2>Com ha de ser la diapositiva</h2>
+<div class="wire">
+<div class="t">NOM DE LA CENTRAL</div>
+<div style="background:#fff2cc"><b>Origen</b><br>Font · Primària · Renovable o no · Icona</div>
+<div style="background:#deeaf6"><b>Procés</b><br>Esquema amb fletxes · Transformacions d'energia</div>
+<div style="background:#e2efd9"><b>Impacte</b><br>2 avantatges · 2 inconvenients · Dada curiosa</div>
+<div class="i">Imatge de la central (la busqueu vosaltres)</div>
+</div>
+<ul>
+<li>Màxim 4 línies o punts per bloc; la resta ho expliqueu amb la veu.</li>
+<li>Lletra gran (mínim 20 punts) i un color per bloc: groc, blau i verd.</li>
+<li>Dibuixos i icones millor que molt text.</li>
+</ul>
+
+<h2>Com trobar i posar la imatge de la central</h2>
+<div class="box"><ol>
+<li>Busqueu a internet una foto o il·lustració de la vostra central. Proveu amb paraules com «parc eòlic», «presa hidroelèctrica» o «central nuclear Ascó».</li>
+<li>Trieu una imatge clara, sense massa text. Millor si és una foto real de la central o un esquema senzill.</li>
+<li>Perquè sigui legal, busqueu-la en un lloc d'imatges lliures com <b>Wikimedia Commons</b>, o al cercador d'imatges feu servir els filtres d'<b>drets d'ús</b> per tenir imatges amb llicència oberta.</li>
+<li>Deseu la imatge o copieu-la i enganxeu-la a la diapositiva.</li>
+<li>Escriviu sota la imatge d'on l'heu treta (el nom de la pàgina web).</li>
+</ol></div>
+
+<h2>Llista de comprovació abans d'entregar</h2>
+<div class="box"><ul style="list-style:none;padding:0;margin:0">
+<li><label><input type="checkbox"> Hi ha el nom de la central al títol.</label></li>
+<li><label><input type="checkbox"> Origen: font, primària i renovable / no renovable.</label></li>
+<li><label><input type="checkbox"> Procés: passos en ordre i transformacions d'energia.</label></li>
+<li><label><input type="checkbox"> Impacte: 2 avantatges, 2 inconvenients i dada curiosa.</label></li>
+<li><label><input type="checkbox"> Hi ha una imatge amb la font citada.</label></li>
+<li><label><input type="checkbox"> Tothom ha escrit el seu bloc amb paraules pròpies.</label></li>
+<li><label><input type="checkbox"> Hem assajat: 90 segons per persona.</label></li>
+</ul></div>
+</section>
+
+<section id="fitxes" hidden>
+<p class="sub">Trieu la vostra central. La informació és el punt de partida: heu de triar-la, reescriure-la i organitzar-la.</p>
+<div class="chips" id="chips"></div>
+<div id="fitxa"></div>
+</section>
+
+<section id="graella" hidden>
+<p class="sub">Mentre escolteu les presentacions, ompliu la graella. A casa, repasseu-la i acabeu-la amb les vostres paraules. El que escriviu es desa en aquest dispositiu.</p>
+<div class="sc"><table id="gt"></table></div>
+<h2>Pregunta final</h2>
+<p>Quina central creus que és la millor opció per produir electricitat al lloc on vius? Justifica-ho amb un avantatge i tenint en compte un inconvenient.</p>
+<textarea id="fin" data-k="final" aria-label="Resposta a la pregunta final"></textarea>
+<p><button class="btn" id="pr">Imprimeix</button><button class="btn" id="cl">Esborra-ho tot</button></p>
+</section>
+</main>
+
+<script>
+const C=[
+{id:"solar",n:"Solar fotovoltaica",c:"#c55a11",f:"El Sol (radiació solar)",k:"Primària · renovable",
+r:"Les plaques solars capten la llum del Sol i la converteixen directament en electricitat. És l'única central d'aquest treball que no té turbina ni alternador.",
+x:"Excepció: aquí no hi ha cap part que giri. La llum es transforma en electricitat dins la mateixa placa.",
+p:["La llum del Sol (energia radiant) arriba a les plaques.","Les cèl·lules fotovoltaiques de silici absorbeixen la llum i mouen els electrons: es produeix corrent continu.","Un inversor el converteix en corrent altern, el de la xarxa.","Un transformador puja la tensió i l'electricitat viatja fins a llars i indústries."],
+t:"Energia radiant (Sol) → Energia elèctrica",
+a:["Inesgotable i gratuïta","No emet gasos mentre funciona","Silenciosa i sense parts mòbils","Es pot posar a teulades"],
+i:["No produeix de nit i menys amb núvols","Els grans parcs ocupen molt de terreny","Cal emmagatzemar l'energia","Fabricar les plaques gasta energia i materials"],
+d:"El Sol envia a la Terra en una hora aproximadament tanta energia com la humanitat gasta en un any."},
+{id:"eolica",n:"Eòlica",c:"#2e75b6",f:"El vent",k:"Primària · renovable",
+r:"Els aerogeneradors aprofiten la força del vent per fer girar unes aspes enormes. El moviment arriba a un alternador que genera electricitat. Es posen on bufa vent amb regularitat: turons, costes i mar obert.",
+p:["El vent (energia cinètica) empeny les aspes. El conjunt d'aspes (rotor) fa de turbina.","Les aspes giren un eix lent que va a un multiplicador, que fa el gir molt més ràpid.","L'eix ràpid mou l'alternador, que genera electricitat.","Un transformador puja la tensió i l'electricitat va a la xarxa."],
+t:"Energia cinètica del vent → Energia mecànica (gir) → Energia elèctrica",
+a:["Renovable i inesgotable","No emet gasos ni residus","No cal combustible i el manteniment és barat","El terreny es pot seguir conreant"],
+i:["Sense vent no produeix","Impacte visual al paisatge","Soroll i risc per a ocells i ratpenats","Cal trobar llocs amb vent adequat"],
+d:"Les aspes dels aerogeneradors marins més grans superen els 100 metres: com un camp de futbol!"},
+{id:"hidraulica",n:"Hidràulica",c:"#0e7c7b",f:"L'aigua d'un riu o embassament",k:"Primària · renovable",
+r:"Una presa tanca el riu i acumula aigua. Quan s'obren les comportes, l'aigua cau per un conducte i fa girar una turbina connectada a un alternador.",
+p:["La presa acumula aigua a dalt: té energia potencial gravitatòria.","S'obren les comportes i l'aigua baixa pels conductes forçats i guanya velocitat (energia cinètica).","L'aigua fa girar la turbina (energia mecànica).","La turbina mou l'alternador i es genera electricitat. L'aigua torna al riu.","Un transformador puja la tensió i va a la xarxa."],
+t:"Energia potencial de l'aigua → cinètica → mecànica (turbina) → elèctrica",
+a:["Renovable: el cicle de l'aigua la torna a omplir","No emet gasos mentre funciona","Es regula obrint o tancant comportes","L'embassament serveix també per regar i abastir aigua"],
+i:["Canvia l'ecosistema del riu i inunda terrenys","Depèn de la pluja","Construir-la és car i lent","De vegades cal desplaçar pobles"],
+d:"Algunes centrals són reversibles: quan sobra electricitat bomben l'aigua cap amunt, com una gran «bateria» d'aigua."},
+{id:"fossils",n:"Combustibles fòssils",c:"#595959",f:"Carbó, petroli o gas natural",k:"Primària · no renovable",
+r:"Les centrals tèrmiques cremen carbó, petroli o gas. La calor escalfa aigua fins a fer vapor a pressió, que mou una turbina connectada a l'alternador.",
+p:["Es crema el combustible a la caldera: l'energia química es transforma en calor.","La calor converteix l'aigua en vapor a molta pressió.","El vapor fa girar la turbina (energia mecànica).","La turbina mou l'alternador i es genera electricitat.","El vapor es refreda al condensador i l'aigua es reutilitza."],
+t:"Energia química → tèrmica (calor) → mecànica (turbina) → elèctrica",
+a:["Molta energia amb poc combustible","Produeixen quan cal, de dia i de nit","Tecnologia coneguda","Els combustibles es poden transportar"],
+i:["Emeten CO2 i escalfen el planeta","Contaminen l'aire","No són renovables: s'esgoten","Molts països els han d'importar"],
+d:"El carbó, el petroli i el gas es van formar fa milions d'anys a partir de restes d'éssers vius. Per això es diuen «fòssils»."},
+{id:"nuclear",n:"Nuclear",c:"#7030a0",f:"L'urani (fissió dels seus àtoms)",k:"Primària · no renovable",
+r:"En una central nuclear es trenquen nuclis d'urani (fissió) i s'allibera molta calor. Aquesta calor fa vapor, que mou una turbina i un alternador, com en una tèrmica, però sense cremar res.",
+p:["Al reactor els àtoms d'urani es divideixen (fissió) i alliberen calor.","La calor escalfa aigua i fa vapor a pressió.","El vapor fa girar la turbina (energia mecànica).","La turbina mou l'alternador i es genera electricitat.","Aigua d'un riu, del mar o d'una torre refreda el vapor perquè es reutilitzi."],
+t:"Energia nuclear → tèrmica (calor) → mecànica (turbina) → elèctrica",
+a:["Molta energia amb molt poc combustible","No emet CO2 mentre funciona","Electricitat constant, de dia i de nit","Ocupa poc espai"],
+i:["Residus radioactius que cal guardar milers d'anys","Un accident greu seria molt perillós (Txernòbil, Fukushima)","L'urani és limitat","Desmantellar-la és car i lent"],
+d:"A Catalunya hi ha les centrals nuclears d'Ascó i Vandellòs II, a la província de Tarragona."},
+{id:"biomassa",n:"Biomassa",c:"#548235",f:"Matèria orgànica: restes de poda, llenya, serradures, palla, residus de granges",k:"Primària · renovable (si es gestiona bé)",
+r:"Les centrals de biomassa cremen matèria orgànica per escalfar aigua i fer vapor. Funcionen com una tèrmica, però amb un combustible que es pot renovar.",
+p:["Es recull i s'asseca la biomassa.","Es crema a la caldera: l'energia química es transforma en calor.","La calor fa vapor d'aigua a pressió.","El vapor fa girar la turbina i aquesta l'alternador: hi ha electricitat.","El vapor es refreda al condensador i l'aigua es reutilitza."],
+t:"Energia química → tèrmica (calor) → mecànica (turbina) → elèctrica",
+a:["Aprofita residus","Renovable si es replanten els arbres","Netejar boscos ajuda a prevenir incendis","El CO2 que emet és semblant al que la planta va absorbir"],
+i:["Emet CO2 i partícules en cremar-se","Cal molt combustible i transportar-lo","Si es tala sense replantar, deixa de ser renovable","Cultivar plantes per cremar-les ocupa terreny"],
+d:"Amb restes orgàniques i residus de granges també es pot fer biogàs, un gas que serveix per generar electricitat."}
+];
+const $=s=>document.querySelector(s);
+const L=a=>"<ul>"+a.map(x=>"<li>"+x+"</li>").join("")+"</ul>";
+// tabs
+document.querySelectorAll("nav button").forEach(b=>b.onclick=()=>{
+ document.querySelectorAll("nav button").forEach(x=>x.setAttribute("aria-selected",x===b));
+ document.querySelectorAll("main>section").forEach(s=>s.hidden=s.id!==b.dataset.t);
+ scrollTo(0,0);});
+// fitxes
+const ch=$("#chips");
+C.forEach((c,i)=>{const b=document.createElement("button");b.textContent=c.n;b.style.setProperty("--c",c.c);b.onclick=()=>show(i);ch.appendChild(b)});
+function show(i){const c=C[i];
+ [...ch.children].forEach((b,j)=>b.setAttribute("aria-pressed",j===i));
+ $("#fitxa").innerHTML=`<div style="--c:${c.c}"><div class="fh"><h2>Central ${c.n}</h2><div>${c.k}</div></div>
+ <div class="box"><b>Font d'energia:</b> ${c.f}<br>L'electricitat és energia <b>secundària</b>.</div>
+ <h2>En poques paraules</h2><p>${c.r}</p>${c.x?`<p class="exc">${c.x}</p>`:""}
+ <h2>Com es genera l'electricitat</h2><ol>${c.p.map(x=>"<li>"+x+"</li>").join("")}</ol>
+ <div class="tr"><b>Transformacions d'energia:</b> ${c.t}</div>
+ <div class="cols"><div class="box pro"><b>Avantatges</b>${L(c.a)}</div><div class="box con"><b>Inconvenients</b>${L(c.i)}</div></div>
+ <div class="box"><b>Sabies que…?</b> ${c.d}</div></div>`;}
+show(0);
+// graella amb desat local
+const H=["Central","Font d'energia","Renovable? (sí / no)","Com genera electricitat (amb les teves paraules)","Un avantatge","Un inconvenient"];
+const gt=$("#gt");let h="<tr>"+H.map(x=>"<th>"+x+"</th>").join("")+"</tr>";
+C.forEach(c=>{h+=`<tr><td class="n" style="border-left:6px solid ${c.c}">${c.n}</td>`+[1,2,3,4,5].map(j=>`<td><textarea data-k="${c.id}-${j}" aria-label="${H[j]} · ${c.n}"></textarea></td>`).join("")+"</tr>"});
+gt.innerHTML=h;
+const TA=()=>document.querySelectorAll("textarea[data-k]");
+TA().forEach(t=>{try{t.value=localStorage.getItem("cel-"+t.dataset.k)||""}catch(e){}
+ t.oninput=()=>{try{localStorage.setItem("cel-"+t.dataset.k,t.value)}catch(e){}}});
+$("#pr").onclick=()=>print();
+$("#cl").onclick=()=>{if(confirm("Vols esborrar tot el que has escrit?"))TA().forEach(t=>{t.value="";try{localStorage.removeItem("cel-"+t.dataset.k)}catch(e){}})};
+</script>
+</body>
+</html>
